@@ -376,7 +376,7 @@ section {
   content: "";
   position: absolute;
   display: block;
-  width: 120px;
+  width: 100px;
   height: 1px;
   background: #ddd;
   bottom: 1px;
