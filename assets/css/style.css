@@ -728,6 +728,30 @@ section {
   bottom: 15px;
   right: 15px;
 }
+/*--------------------------------------------------------------
+# CV
+--------------------------------------------------------------*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #01356c;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 10s ease;
+}
+
+.btn:hover {
+  background-color: #01356c;
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details
