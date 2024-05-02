@@ -65,12 +65,15 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Nour Meziane</h1>
-      <p>Je suis <span class="typed" data-typed-items="etudiant, en alternance, chez SEO.fr, a l'ecole IRIS"></span></p>
+      <p>Je suis etudiant, en alternance, chez SEO.fr, a l'ecole IRIS<span class="typed" data-typed-items=""></span></p>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
+
+
+    <!------------diapo------------>
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -100,8 +103,6 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Date de naissance:</strong> <span>25 Octobre
-                      2004</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Telephone:</strong> <span>+33 6.03.76.72.76</span>
                   </li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Athis-mons 91200</span></li>
@@ -293,19 +294,35 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
-
-
-
-
-
-
               </div>
-
         </div>
-
-    </section>
+        <div class="col-lg-4 mx-auto">
+          <h2>Competences acqueri chez seo.fr </h2>
+          <div class="progress">
+              <span class="skill">Wordpress <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+              </div>
+          </div>
+      
+          <div class="progress">
+              <span class="skill">Elementor <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+              </div>
+          </div>
+          <div class="progress">
+            <span class="skill">Creations de sites <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+            </div>
+        </div>
+      </div>
+      
 
     </section><!-- End Skills Section -->
 
@@ -423,10 +440,93 @@
                       compréhension approfondie des mécanismes du référencement naturel et des compétences pratiques
                       dans la gestion de contenu en ligne.</p>
                   </div>
-                  <img class="img-fluid" src="assets/img/portfolio/portfolio-1.jpg" alt="..." />
+                  <img class="img-fluid" src="assets/img/portfolio/portfolio-1.jpg" alt="icone-diapo" />
+                  
                 </div>
+                <button style="background-color: #0563bb; color: white;" onclick="ouvrirDiaporama()">Presentation de l'entreprise et de mon travail </button>
+
               </div>
             </div>
+            <!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diaporama</title>
+<style>
+/* Style de la diapositive */
+.diaporama {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Style des images */
+.diaporama-images {
+  display: block;
+  margin: center;
+}
+
+/* Style du texte */
+.diaporama-texte {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Style du bouton pour fermer */
+.diaporama-fermer {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #0563bb;
+  font-size: 30px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- Bouton pour ouvrir le diaporama -->
+
+<!-- La diapositive -->
+<div id="diaporama" class="diaporama">
+  <span class="diaporama-fermer" onclick="fermerDiaporama()">&times;</span>
+  <div class="diaporama-images">
+    <center>
+    <img  src="assets/img/portfolio/diapo-seo2.jpg" style="width:50%">
+    </center>
+  </div>
+  <div class="diaporama-texte">SEO.fr est une agence spécialisée dans le référencement naturel et les stratégies digitales. Notre expertise nous permet d'accompagner nos clients dans l'optimisation de leur visibilité en ligne et l'amélioration de leur positionnement sur les moteurs de recherche. Parmi nos services phares, nous proposons l'audit SEO, la création de contenu optimisé, le netlinking, la gestion de campagnes publicitaires (SEA), ainsi que le conseil stratégique en matière de référencement. Notre approche personnalisée et notre suivi rigoureux des tendances du marché nous permettent d'apporter des solutions sur mesure, adaptées aux besoins spécifiques de chaque client, et de garantir des résultats durables et mesurables.
+    <br>
+    <br>
+    Chez SEO.fr, j'étais responsable de la création de nouveaux blogs pour notre entreprise, ainsi que de la maintenance de 40 blogs déjà existants, tout cela dans le cadre de mon apprentissage. Cela signifiait que je devais mettre en place de nouvelles plateformes de blog, publier du contenu régulièrement, gérer les mises à jour logicielles et les plugins, et résoudre les problèmes techniques rencontrés sur les blogs existants. Ce rôle m'a vraiment permis d'acquérir une expérience précieuse dans la gestion et l'optimisation des blogs afin d'améliorer leur référencement et d'accroître l'engagement des utilisateurs.
+  </div>
+</div>
+
+<script>
+// Fonction pour ouvrir le diaporama
+function ouvrirDiaporama() {
+  document.getElementById("diaporama").style.display = "block";
+}
+
+// Fonction pour fermer le diaporama
+function fermerDiaporama() {
+  document.getElementById("diaporama").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
     </section>
 
     <div class="section-title">
@@ -518,6 +618,87 @@
                 </div>
         </section>
 
+        <section id="portfolio" class="portfolio">
+          <div class="container" data-aos="fade-up">
+     
+            <div class="section-title">
+              <h2>Projets</h2>
+              <p>Voici les différents projets sur lesquelles nous avons pu travailler dans le cadre de notre formation, en classe ou à la maison, en groupe ou individuellement.</p>
+            </div>
+     
+            <div class="row" data-aos="fade-up" data-aos-delay="100">
+              <div class="col-lg-12 d-flex justify-content-center">
+                <ul id="portfolio-flters">
+                  <li data-filter="*" class="filter-active">Tout</li>
+                  <li data-filter=".filter-app">App</li>
+                  <li data-filter=".filter-card">Site</li>
+                  <li data-filter=".filter-web">GLPI</li>
+                </ul>
+              </div>
+            </div>
+     
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+     
+              <!--<div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="assets/img/IrisEvent.png" class="img-fluid" alt="error"  >
+                  <div class="portfolio-info">
+                    <a href="Projets/Iris.html" ><h4>Iris Event</h4></a>
+                    <div class="portfolio-links">
+                    </div>
+                  </div>
+                </div>
+              </div>-->
+     
+              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img alt=""embed src="assets/img/portfolio/GLPI.jpeg" type="application/pdf" width="100%" height="100%">
+                  <div class="portfolio-info">
+                    <h4><embed src="glpi.pdf" type="application/pdf" width="100%" height="100%">GLPI</h4>
+                    <!----><div class="portfolio-links">
+                    </div>
+                  </div>
+                </div>
+              </div>
+     
+             
+     
+              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/snake.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <a class="active" href="Projets/Snake.html"><h4>Snake.c</h4></a>
+                  </div>
+                </div>
+              </div>
+     
+     
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/airfrance-2.jpeg" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                    <a href="assets/img/portfolio/Air-France.png" ><h4>Site Air France</h4></a>
+                   
+                  </div>
+                </div>
+              </div>
+     
+              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                <div class="portfolio-wrap">
+                  <img src="assets/img/portfolio/neige-soleil.png" class="img-fluid" alt="">
+                  <div class="portfolio-info">
+                     <a href="assets/img/Neige&soleil.png" ><h4>Neige & Soleil</h4></a>
+                   
+                  </div>
+                </div>
+              </div>
+     
+             
+            </div>
+     
+          </div>
+        </section><!-- End Portfolio Section -->
+
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio section-bg">
           <div class="container" data-aos="fade-up">
@@ -582,7 +763,7 @@
         <div class="text-center">
           <div class="container">
             <a href="assets/img/portfolio/CV-2024.pdf" class="btn"
-              style="background-color: #191970; color: white;">Télécharger CV</a>
+              style="background-color: #0563bb; color: white;">Télécharger CV</a>
           </div>
           <!---------------end cv-->
 
@@ -854,11 +1035,8 @@
       <p>N'hésitez pas à me contacter pour toute collaboration future, idée ou simplement pour échanger sur des projets.
         Votre intérêt est précieux et votre avis compte énormément.</p>
       <div class="social-links">
-        <a href="https://twitter.com/Nanomez91" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://github.com/Nourmeziane" class="github"><i class="bx bxl- Github"></i></a>
+        <a href="https://www.linkedin.com/in/nour-meziane-b0b321223/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
