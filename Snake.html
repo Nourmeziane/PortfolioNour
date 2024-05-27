@@ -1,11 +1,11 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Developper la presence en ligne de l'entreprise</title>
+    <title>Qnake</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -40,63 +40,78 @@
 
 <body>
 
-     <!-- ======= Mobile nav toggle button ======= -->
-  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <h1 class="logo me-auto me-lg-0"><a href="index.html"></a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#Présentation" class="nav-link scrollto "><i class="bx bx-home"></i> <span>Présentation</span></a></li>
-        <li><a href="#contexte" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Collecter, suivre et orienter des demandes </span></a></li>
-        <li><a href="#Organisation" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Traiter des demandes concernant les applications</span></a></li>
-        
-      </ul>
-    </nav><!-- .nav-menu -->
+            <header id="header" class="d-flex flex-column justify-content-center">
 
-  </header><!-- End Header -->
+                <nav id="navbar" class="navbar nav-menu">
+                  <ul>
+                    <li><a href="#Présentation" class="nav-link scrollto "><i class="bx bx-home"></i> <span>Présentation</span></a></li>
+                    <li><a href="#Fonctionnalités principales" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Fonctionnalités principales </span></a></li>
+                    <li><a href="#Architecture du Code" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Architecture du Code</span></a></li>
+                  </ul>
+                </nav><!-- .nav-menu -->
+
+        </div>
+        <!-- ======= Hero Section ======= -->
+
+    </header><!-- End Header -->
     <main id="main">
         <!-- ======= Hero Section ======= -->
 
         <div class="container" data-aos="fade-up">
-            <section id="Présentation" class="Présentation">
+            <section id="class" class="class">
                 <div class="section-title">
-                    <a href="http://localhost/MyResume/#Entreprise" ><h1>Developper la presence en ligne de l'entreprise</h1></a>
-                    
+                    <a href="http://localhost/MyResume/#portfolio"><h1>Snake</h1></a>
                 </div>
-                <section id="contexte" class="contexte">
+                <section id="Présentation" class="">
                     <div class="" style="">
                         <center>
-                           
-                            <br>
-                            <h3><strong>Référencer les services en ligne de l'organisation et mesurer leur visibilité</strong></h3>
-
+                            <h3><strong>Présentation</strong></h3>
+        
                             <br><br>
                             <p>
-
+                                Ce projet est un jeu Snake développé en langage C. Le jeu s'inspire du classique où le joueur contrôle un serpent qui grandit en mangeant de la nourriture tout en évitant les murs et sa propre queue. L'objectif est de survivre le plus longtemps possible tout en obtenant le score le plus élevé.
                             </p>
-                            <img src="./assets/img/portfolio/ticketseo.jpg"alt="dcsi"
-                            style=" width: 30%; padding-left: 30px; float:center; " />
+                            <video controls width="500">
+                                <source src="assets/img/videoframe_0.png" type="video/webm" />
                         </center>
-
-
-                    </div>
-                </section>  
-                <section id="Organisation" class="Organisation">
-                    <div class="" style="padding-bottom: 300px;">
-                        <h3><strong>Participer à l'évolution d'un site Web exploitant les données de l'organisation</strong></h3>
-                        <br><br>
-                        <img src="assets/img/portfolio/seo.fr.png" alt="dcsi"
-                            style=" width: 50%; padding-left: 30px; float:right; " />
-
-
-                        <p>
-                            J'ai participé à la refonte des blogs de l'entreprise SEO.fr, où j'ai été chargé de revitaliser et optimiser un total de 40 blogs. Mon rôle comprenait la révision du contenu existant, l'implémentation de nouvelles stratégies de référencement, et l'amélioration de l'expérience utilisateur. En travaillant en étroite collaboration avec l'équipe de rédaction et les développeurs, j'ai contribué à accroître la visibilité en ligne des blogs, à augmenter le trafic organique et à renforcer l'engagement des lecteurs. Cette mission m'a permis de mettre en œuvre mes compétences en SEO et en gestion de contenu tout en apportant une valeur ajoutée significative à l'entreprise.                        </p>
+                    
+                   
                     </div>
                 </section>
+                <section id="Fonctionnalités Principales" class="Fonctionnalités Principales">
+                    <div class="" style="padding-bottom: 300px;">
+                        <h3><strong>Fonctionnalités Principales</strong></h3>
+                        <br><br>
+                        <img src="assets/img/portfolio/fonctions.jpeg" alt="dcsi"
+                            style=" width: 50%; padding-left: 30px; float:right; " />
 
-               
+                       
+                             <p>Contrôle du Serpent : Le joueur peut diriger le serpent dans quatre directions (haut, bas, gauche, droite) à l'aide des touches du clavier.</p>
+                            <p> Mécanisme de Croissance : Chaque fois que le serpent mange de la nourriture, il grandit d'un segment.</p>
+                            <p> Génération de Nourriture : La nourriture apparaît de manière aléatoire sur le plateau de jeu.</p>
+                            <p>Conditions de Fin de Jeu : Le jeu se termine si le serpent entre en collision avec un mur ou avec lui-même.</p>
+                    </div>
+                </section>
+                <section id="Architecture du Code" class="Architecture du Code">
+                    <div class="" style="padding-bottom: 200px;">
+                        <h3><strong>Architecture du Code</strong></h3>
+                        <br><br>
+                        <img src="assets/img/portfolio/code.png" alt="dcsi" style=" width: 50%; padding-right: 30px; float:left; " />
+                    
+                    
+                        <p>Structure des Données : Le jeu utilise des structures en C pour représenter le serpent et le plateau de jeu.</p>
+                        <p>Affichage : L'affichage du jeu est réalisé dans le terminal avec des graphiques basiques à l'aide de bibliothèques comme ncurses.</p>
+                    </div>
+        </div>
+        </section>
+       
 
         </div>
     </main>
